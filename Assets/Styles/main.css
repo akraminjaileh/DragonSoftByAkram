@@ -1,0 +1,86 @@
+/*Global Font */
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Global Colors */
+:root {
+    --default-color: #3d4348;
+    --heading-color: #3e5055;
+    --nav-color: #3e5055;
+    --nav-hover-color: #2f4b95;
+}
+
+/* Smooth scroll */
+:root {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    color: var(--default-color);
+    font-family: var(--default-font);
+}
+
+a {
+    color: var(--nav-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--nav-hover-color), transparent 25%);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    font-family: var(--default-font);
+}
+
+/*Custom color for button*/
+.btn-outline-custom {
+    --bs-btn-color: #2f4b95;
+    --bs-btn-border-color: #2f4b95;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2f4b95;
+    --bs-btn-hover-border-color: #2f4b95;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2f4b95;
+    --bs-btn-active-border-color: #2f4b95;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #2f4b95;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #2f4b95;
+    --bs-gradient: none;
+}
+
+.btn-custom {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2f4b95;
+    --bs-btn-border-color: #2f4b95;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2f4a95e8;
+    --bs-btn-hover-border-color: #2f4a95e8;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2f4a95e8;
+    --bs-btn-active-border-color: #2f4a95f5;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2f4b95;
+    --bs-btn-disabled-border-color: #2f4b95;
+}
+
+/*Custom text for icon*/
+.text-custom {
+    color: #2f4b95;
+}
